@@ -32,10 +32,18 @@ class SortedList {
     }
    
   sum() {
+    if (this.items.length === 0){
+      return 0;
+    }
+
 
   }
 
-  avg() {}
+  avg() {
+    if (this.items.length === 0){
+      throw new Error('EmptySortedList');
+    }
+  }
 }
 
 module.exports = SortedList;
