@@ -35,14 +35,14 @@ class SortedList {
     if (this.items.length === 0){
       return 0;
     }
-
-
+    return this.items.reduce((a, b) => a + b); //searched for reduce at stackoverflow
   }
 
   avg() {
     if (this.items.length === 0){
       throw new Error('EmptySortedList');
     }
+    return this.items.reduce((a, b) => a + b)/this.items.length;
   }
 }
 
